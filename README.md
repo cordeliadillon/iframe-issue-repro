@@ -1,6 +1,6 @@
 # iframe-screenreader-chrome-bug
 
-This code sample illustrates a bug that can be reproduced in Chromium-based browsers with the JAWS and NVDA screen readers.
+This code sample illustrates a bug that can be reproduced in Chromium-based browsers with the JAWS and NVDA screen readers. Occasionally reproducible with VoiceOver, too.
 
 ## Issue
 
@@ -19,6 +19,10 @@ When the source page in an `<iframe>` is swapped out for another page, e.g. thro
 9. Notice the same behavior in "Step 3" as in "Step 2."
 
 (I tried refreshing the JAWS virtual buffer but that didn't help.)
+
+### Compare to OS X VoiceOver with Chrome
+1. Try the same steps in Chrome with VoiceOver on a device running OS X.
+2. Notice that *sometimes* it reads the content and sometimes it doesn't. Seems like it takes a few moments for the screen reader to process the new screen?
 
 ### Compare to Firefox
 1. Try the same steps in Firefox with NVDA or JAWS.
