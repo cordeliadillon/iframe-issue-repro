@@ -1,16 +1,44 @@
-body {
+html {
 	font-family: 'Roboto', 'Segoe UI', 'San Francisco', sans-serif;
+	background-color: white;
+}
+
+body {
+	padding: 2rem;
 }
 
 iframe {
 	width: 100%;
 	height: 500px;
+	border: 1px solid #ccc;
 }
 
-div {
-	padding: 10px 0;
+h1 {
+	font-weight: 300;
+    font-size: 1.75rem;
+    line-height: 1.25;
+    margin-bottom: .5rem;
 }
 
-input, textarea {
+h2 {
+	font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.25;
+    margin-bottom: .5rem;
+}
+
+fieldset {
+	margin: 10px 0;
+}
+
+.db {
+	display: block;
+}
+
+label + input {
+	margin-bottom: 10px;
+}
+
+label input {
 	margin: 10px;
 }
