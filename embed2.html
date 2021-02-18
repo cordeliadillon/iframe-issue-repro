@@ -2,28 +2,36 @@
 <html lang="en">
   <head>
     <title>Add Menu Item</title>
-    <link rel="stylesheet" href="slds/styles/salesforce-lightning-design-system.min.css"/>
     <link rel="stylesheet" href="styles.css"/>
   </head>
   <body>
-    <form action="embed3.html" method="POST">
-      <h2>Add Menu Item: Basic Information</h3>
-      <div>
-        <label class="db" for="name">Dish name</label>
-        <input type="text" id="name"/>
-      </div>
-      <div>
-        <label class="db" for="desc">Description</label>
-        <textarea id="desc"></textarea>
-      </div>
-      <fieldset>
-        <legend>Tags</legend>
-        <div><label><input type="checkbox" name="tag" value="v"/> Vegetarian</label></div>
-        <div><label><input type="checkbox" name="tag" value="vg"/> Vegan</label></div>
-        <div><label><input type="checkbox" name="tag" value="gf"/> Gluten-Free</label></div>
-        <div><label><input type="checkbox" name="tag" value="sp"/> Spicy</label></div>
-      </fieldset>
-      <input type="submit" value="Next"/>
-    </form>
+    <form>
+      <main>
+        <h1>Add Menu Item</h1>
+        <h2>Step 2</h2>
+        <div>
+          <label class="db" for="name">Dish name</label>
+          <input type="text" id="name" autofocus />
+        </div>
+        <div>
+          <label class="db" for="desc">Description</label>
+          <textarea id="desc"></textarea>
+        </div>
+        <fieldset>
+          <legend>Tags</legend>
+          <div><label><input type="checkbox" name="tag" value="v"/> Vegetarian</label></div>
+          <div><label><input type="checkbox" name="tag" value="vg"/> Vegan</label></div>
+          <div><label><input type="checkbox" name="tag" value="gf"/> Gluten-Free</label></div>
+          <div><label><input type="checkbox" name="tag" value="sp"/> Spicy</label></div>
+        </fieldset>
+        <button type="button" onClick="redirect()">Next step</button>
+        <p id="info">This "Next step" button updates window.location to point to another page.</p>
+      </form>
+    </main>
   </body>
+  <script>
+    redirect = function() {
+      window.location = "embed3.html";
+    }
+  </script>
 </html>

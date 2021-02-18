@@ -2,17 +2,20 @@
 <html lang="en">
   <head>
     <title>Add Menu Item</title>
-    <link rel="stylesheet" href="slds/styles/salesforce-lightning-design-system.min.css"/>
     <link rel="stylesheet" href="styles.css"/>
   </head>
   <body>
-    <form>
-      <h2>Add Menu Item: Additional Information</h2>
-      <div>
-        <label class="db" for="price">Price</label>
-        <input id="price" type="text"/>
-      </div>
-      <input type="submit" value="Save"/>
-    </form>
+    <main>
+      <form>
+        <h1>Add Menu Item</h1>
+        <h2>Step 3</h2>
+        <div>
+          <label class="db" for="price">Price</label>
+          <input id="price" type="text" autofocus/>
+        </div>
+        <input type="submit" value="Save" aria-describedby="info"/>
+        <p id="info">This "Save" button doesn't do anything.</p>
+      </form>
+    </main>
   </body>
 </html>
