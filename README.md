@@ -28,5 +28,5 @@ When the source page in an `<iframe>` is swapped out for another page, e.g. thro
 1. Open /embed1.html in Chrome or Edge.
 2. Notice you you can successfully navigate through the controls and the screen reader reads accordingly.
 
-## Related issues
+## Similar issues
 - [Issue 992595: AX focus events not consistently firing in iframes](https://bugs.chromium.org/p/chromium/issues/detail?id=992595)
