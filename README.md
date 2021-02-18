@@ -1,4 +1,4 @@
-# iframe-screenreader-issue
+# iframe-screenreader-chrome-bug
 
 This code sample illustrates a bug that can be reproduced in Chromium-based browsers with the JAWS and NVDA screen readers.
 
