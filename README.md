@@ -4,7 +4,7 @@ This code sample illustrates a bug that can be reproduced in Chromium-based brow
 
 ## Issue
 
-When the source page in an `<iframe>` is swapped out for another page, e.g. through a form POST or a window.location change, the screen reader is no longer able to interact with the iframed content as expected.
+When the source page in an `<iframe>` is swapped out for another page, e.g. through a form POST or a `window.location` change, the screen reader is no longer able to interact with the iframed content as expected.
 
 ## Try it yourself
 
